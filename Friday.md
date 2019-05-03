@@ -230,3 +230,29 @@ Automate and simplify as much as you can!  Edit just a few strings in __init__.p
 **ox.cx/oss**
 @hynek
 vrmd.de
+
+
+Scraping a Million Pokemon Battles: Distributed Systems By Example
+==================================================================
+
+Speaker: Duy Nguyen
+
+.:Scraping unauthenticated Pokemon battles on AWS -- learn about Distributed Systems
+
+This Pokemon game ("Pokemon Showdown" (?)) is on github, all open source.  Duy went there to understand logs, which can be used to replay the battles.
+
+Focus of this talk:  finding new battles and downloading them.
+
+(Aside: Raymond Hettinger - Thinking About Concurrence - PyCon Russia 2016 - great talk to learn concurrency.)
+
+Producers (producing urls); consumers (scraping the data); plus messaging between them.  Considerations:  concurrency, loss of message (solution: SQSQueue), others.
+
+
+(Some) Lightning Talks
+======================
+
+Snappy Code - Python for K-5.  snappycode.org
+
+Less gentle, less kind pandas DataFrame (called "StaticFrame")
+
+

@@ -18,3 +18,4 @@
 * documentation - sphinx, pandoc
 * tox and/or nox
 * learning - stackoverflow, opensource.com
+* pandas, numpy
