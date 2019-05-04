@@ -92,3 +92,68 @@ d + d + d + d + d
 ```
 
 
+PEP 572: The Walrus Operator
+============================
+
+Subtitle: what's new in Python 3.7
+
+Speaker: Dustin Ingram
+
+First, a note on governance.  Guido was BDFL.  Now, PEP - Python Enhancement Proposal.  Like a constitutional amendment.  Well known ones:
+* PEP 8 = style guide for Python code.
+* PEP 20 = the Zen of Python
+There are now BDFL delegates, so that others can make decisions on behalf of Guido.
+
+PEP 572 = assignment expressions.  DRAMA!
+
+`:=`.  Let's call this the walrus operator.
+Examples:
+```python
+# option 1
+foo = [f(x), f(x)**2, f(x)**3]
+
+# option 2
+y = f(x)
+foo = [y, y**2, y**3]
+
+# .:Simple (one line), but only calling expensive f() once
+foo = [y := f(x), y**2, y**3]
+```
+
+Another example:
+```python
+chunk = file.read(8192)
+while chunk:
+    process(chunk)
+    chunk = file.read(8192)
+
+# instead
+while chunk := file.read(8192):
+    process(chunk)
+```
+
+You cannot use `:=` in the same way as `=`.
+
+Reception of PEP 572:  it won't be backwards compatible!  What do we call it, so that we can teach it? (it's officially called the named expression operator, I think)  I hate it!
+
+Guido (GEE-do) said "he had to stop reading the threads so that he wouldn't go insane".  He approved PEP 572 and then Guido removed himself as BDFL.  Sad.  Dictators are people too.
+
+Result:  PEP 8000 - governance overview process., 8001 - voting, 8002 - open source governance survey
+Approved:  PEP 8016.  Steering Council.  See keynote tomorrow.
+
+Walrus is in 3.8.  If you don't like it, don't use it.
+
+Is Guido coming back?  He's still here, but not as BDFL.
+
+
+
+
+
+
+
+
+
+
+
+
+
