@@ -146,12 +146,71 @@ Walrus is in 3.8.  If you don't like it, don't use it.
 Is Guido coming back?  He's still here, but not as BDFL.
 
 
+Statisical Profiling (and other fun with the sys module)
+========================================================
+
+Speaker: Emin Martinian
+
+Why statistical profiling? - stats on how often and how long various parts of the program executed.
+
+cProfile is a *deterministic* profiler.
+```python
+import cProfile
+cProfile.run(cmd)
+```
+Awesome, but slow.  Usually can't profile in production.  Also note that deterministic is not thread-aware.
+
+Alternative:  statistical profiler.  Records a "sample" of what is running at various times, i.e. waking up occasionally to see what's running.
+Implement your own with e.g. `stat_prof`, `plop`, `pyflame` (all POSIX); `ox_profile`, `pprofile` (Windows)
 
 
+Exceptional Exceptions - How to properly raise, handle and create them
+======================================================================
+
+Speaker: Mario Corchero
+
+```python
+# exc_info = True includes stack trace in log
+logging.error("an error occurred", exc_info=True)
+```
+
+`logging.exception()`?
+
+Use `repr()` instead of `str()` when printing exceptions, so give you more info.
+
+KeyboardInterrupt, SystemExit, Exception are subclasses of the base class BaseException.  Lots other exceptions are subclasses of Exception.
+Don't inherit from BaseException.  Only from Exception.
+
+.:Be mindful about catching and raising exceptions.
 
 
+Getting Started with Deep Learning
+==================================
 
+Using numpy and keras on voice data.
 
+Data is larnyx vibrations.  Trying to predict if the person has vocal trauma.
+
+More on deep learning...
+numpy - mostly for hold/manipulate array data
+keras - python wrapper around theano, pytorch, tensorflow
+
+A *perceptron* is like a neuron, in that there are multiple inputs with various weights, and those go into some function, and then some output comes out.
+
+Neural network:  observable known input(s) and output; maybe hidden intermediate steps (in this case, the network is "deep").
+
+Types:
+* Convolutional NN: lots and lots of inputs, pulled down to maybe an average of them, and then generates one of a few outputs. Usually for classification.
+* Recurrent NN: intermediate steps "remember" also what happened in the prior step
+* Long-term short-term memory (LSTM) (?)
+
+Issues:
+* running out of memory.  Solution - batch data and analyze batch by batch
+* struggling to write to disk (with pickle).  Solution - h5py to grab/store portions at a time.
+* managing long running process.  Solution - tmux!
+* not analyzing your errors.  Solution - understand the algorithm and its results.
+
+"kaggle" to get data (?), "neural network zoo" to understand the suite of learning algorithms.
 
 
 

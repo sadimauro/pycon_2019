@@ -18,3 +18,5 @@
 * learning - stackoverflow, opensource.com
 * pandas, numpy; anaconda for install + dependency resolution of those and others
 * jupyter notebooks
+* profiling - cProfile, others
+* machine learning - start with keras (wrapper around pytorch, tensorflow, others)

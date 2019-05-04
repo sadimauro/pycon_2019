@@ -1,4 +1,4 @@
-# Python 3.0 (?) introduced static type checking.
+# Python 3.5 introduced static type checking.
 # mypy (Python 3.5+) statically checks type annotations 
 # as define din PEP 484.  
 #
@@ -66,9 +66,7 @@ def cat_strs(arg: List[str]) -> str:
 
 cat_strs(['one', 'two', 'three'])
 
-cond = "mistakenly passing in a tuple instead of a list"
-try:
-    cat_strs(('one', 'two', 'three'))
-except TypeError as e:
-    print(f"{cond}: {e}")
+# this call will not throw an exception, because members of a tuple can be joined,
+# but mypy will warn the user.
+cat_strs(('one', 'two', 'three'))
 
