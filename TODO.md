@@ -1,11 +1,9 @@
-* Testing
 * chi square + steve package
-* pypy
+* pypy, mypy
 * itertools
 * functools
 * flask and plugins like flask-RESTplus
 * swagger for documentation
-* ansible
 * linters - flake8, also black, isort
 * ("monkey-patching")
 * `*args, **kwargs`
