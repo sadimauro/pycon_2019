@@ -213,6 +213,15 @@ Issues:
 "kaggle" to get data (?), "neural network zoo" to understand the suite of learning algorithms.
 
 
+Lightning Talks
+===============
+
+Qt for simple gui development
+
+Wear your badge up high so people can see your name.
+
+FairOSS is trying to establish 'certifications' for businesses so that you know that they're using OS software fairly (funding it, giving back to it, etc.)
+
 
 
 

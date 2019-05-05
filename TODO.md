@@ -1,5 +1,5 @@
 * chi square + steve package
-* pypy, mypy
+* pypy
 * itertools
 * functools
 * flask and plugins like flask-RESTplus
@@ -16,7 +16,7 @@
 * documentation - sphinx, pandoc
 * tox and/or nox
 * learning - stackoverflow, opensource.com
-* pandas, numpy; anaconda for install + dependency resolution of those and others
 * jupyter notebooks
 * profiling - cProfile, others
+* pandas, numpy; anaconda for install + dependency resolution of those and others
 * machine learning - start with keras (wrapper around pytorch, tensorflow, others)
