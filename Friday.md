@@ -181,7 +181,7 @@ If you define your own project, you can define scope, etc.  That's good.
 
 Support and emotional "labor" will burn you out.
 
-Use short feedback loops -- mencourages experimentation, etc.
+Use short feedback loops -- encourages experimentation, etc.
 
 Removing friction.  How?:
 * Act 1: development.  Speaker encourages OS development through welcome message in repo, CONTRIBUTING.rst, outlines code standards, other things (CODE_OF_CONDUCT.rst)  
