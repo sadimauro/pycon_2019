@@ -5,6 +5,8 @@ Produced by the nonprofit Python Software Foundation (PSF).
 
 Keynotes:
 * Russell Keith-Magee, member of django (Python web framework) core team, and owner? of beeware.org.  "What is Python's Black Swan?"
+* Sha Wallace-Stepter.  Python and OS is power.  Inclusion is love.
+* Jessica McKellar.  Our criminal jusdtice system is horrible, hella racist, wildly ineffective.  What can we do to help as programmers?
 
 In addition to talks(Fri-Sun): lightning talks (Fri-Sun), tutorials (Wed-Thu), posters (Sun), job fair (Sun), Education Summit (Thu; how to bring coding literacy to wide audiences).
 
@@ -25,11 +27,19 @@ Decorators are neat.  See examples in decorators.py.  Also see dclasses.py for t
 
 Mocking is a thing.  See example code.
 
-tox is a popular tool to check your package installs and testing in various environments.
+Floats act peculiarly, but their behavior makes sense if you think about how they're stored internally.
+
+
+Less Useful Tidbits
+===================
+
+virtualenv, tox, nox, other tools are popular ones to initialize various virtual environments for checking your package installs and testing.
+
+snappycode.org is a neat drag-and-drop Python code 'teacher' for K-5.
 
 
 Talks I Attended
-======================
+================
 
 Keynotes
 A Snake in the Bits: Security Automation with Python
