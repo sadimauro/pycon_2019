@@ -8,7 +8,7 @@ Keynotes:
 * Sha Wallace-Stepter.  Python and OS is power.  Inclusion is love.
 * Jessica McKellar.  Our criminal jusdtice system is horrible, hella racist, wildly ineffective.  What can we do to help as programmers?
 
-In addition to talks(Fri-Sun): lightning talks (Fri-Sun), tutorials (Wed-Thu), posters (Sun), job fair (Sun), Education Summit (Thu; how to bring coding literacy to wide audiences).
+In addition to talks (Fri-Sun): lightning talks (Fri-Sun), tutorials (Wed-Thu), posters (Sun), job fair (Sun), Education Summit (Thu; how to bring coding literacy to wide audiences).
 
 
 General Impressions of the Conference
@@ -19,7 +19,6 @@ Lots on diversity, accessibility and inclusion.  Gender-neutral bathrooms, mothe
 Lots on pushing for better treatment of Python developers.  "We need sponsors and donors", "volunteering on weekends can't be the way we push Python forward", "Python needs an R&D division".  Dealing with the open-source community, esp folks that feel entitled to FOSS, is very draining.  Leads to burnout, mental health issues.
 
 
-
 Useful tidbits
 ==============
 
@@ -27,11 +26,13 @@ Decorators are neat.  See examples in decorators.py.  Also see dclasses.py for t
 
 Mocking is a thing.  See example code.
 
-Floats act peculiarly, but their behavior makes sense if you think about how they're stored internally.
+Floats act peculiarly, but their behavior mostly makes sense if you think about how they're stored internally.
 
 
 Less Useful Tidbits
 ===================
+
+There is new Python governance:  before Guido was BDFL; now, a five-member steering council share that responsibility.
 
 virtualenv, tox, nox, other tools are popular ones to initialize various virtual environments for checking your package installs and testing.
 
