@@ -8,6 +8,10 @@ def try_assert(evalstr):
     except AssertionError:
         print(f'FAILURE')
 
+def print_and_eval(evalstr):
+    print(f'Evaluating: {evalstr}')
+    print(eval(evalstr))
+
 # Floats are stored as a sign bit, exponent bits ('scaling factor' = the point 'floats'),
 # and the fractional part ('mantissa').
 #
@@ -44,4 +48,30 @@ xd = Decimal(str(x))
 yd = Decimal(str(y))
 zd = Decimal(str(z))
 try_assert('xd + yd == zd')
+
+# Other funny things happen
+
+# Precision vs. magnitude tradeoff
+try_assert('1e20 + 1 == 1e20')
+
+print_and_eval('12345 + 1e15')
+print_and_eval('12345 + 1e16')
+print_and_eval('12345 + 1e17')
+
+i = float("inf")
+print_and_eval('i')
+print_and_eval('i + i')
+print_and_eval('i > 10e10')
+print_and_eval('i > 10e307')
+print_and_eval('i > 10e308')
+print_and_eval('i / i')
+
+n = float('nan')
+print_and_eval('n')
+print_and_eval('n == n')
+print_and_eval('1 > n')
+print_and_eval('1 < n')
+print_and_eval('1 == n')
+print_and_eval('1 + n')
+print_and_eval('n in [n]')
 
