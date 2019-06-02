@@ -1,0 +1,4 @@
+# auto-formats file in place
+black auto-formatting_with_black.py
+
+# Or call black from within vim after installing plugin, like ":Black" 
