@@ -1,14 +1,15 @@
 # Python 3.5 introduced static type checking.
-# mypy (Python 3.5+) statically checks type annotations 
-# as define din PEP 484.  
+# mypy (Python 3.5+) statically checks type annotations
+# as define din PEP 484.
 #
 # More at https://mypy.readthedocs.io
 
-# 
+#
 # Dynamic typing
 #
 def foo(arg1, arg2):
-    return "foo"*arg1 + " " + arg2
+    return "foo" * arg1 + " " + arg2
+
 
 foo(3, "FOO")
 
@@ -31,7 +32,8 @@ except TypeError as e:
 # Note: the errant calls below should be caught by mypy
 #
 def foo2(arg1: int, arg2: str = "default value") -> str:
-    return "foo"*arg1 + " " + arg2
+    return "foo" * arg1 + " " + arg2
+
 
 foo2(4)
 foo2(3, "FOO")
@@ -51,7 +53,8 @@ except TypeError as e:
 
 # Annotations include the None type for function returns
 def foo3() -> None:
-    print('hello world')
+    print("hello world")
+
 
 cond = "mistakenly storing return of non-returning fn"
 try:
@@ -61,12 +64,14 @@ except TypeError as e:
 
 # Using the typing module to annotate more complex types
 from typing import List
+
+
 def cat_strs(arg: List[str]) -> str:
     return "".join(arg)
 
-cat_strs(['one', 'two', 'three'])
+
+cat_strs(["one", "two", "three"])
 
 # this call will not throw an exception, because members of a tuple can be joined,
 # but mypy will warn the user.
-cat_strs(('one', 'two', 'three'))
-
+cat_strs(("one", "two", "three"))

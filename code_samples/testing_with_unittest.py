@@ -2,8 +2,10 @@
 
 import unittest
 
+
 def foo(arg: int) -> int:
-    return arg*arg
+    return arg * arg
+
 
 class MyTestClass(unittest.TestCase):
     def setUp(self):
@@ -22,5 +24,6 @@ class MyTestClass(unittest.TestCase):
     def tearDown(self):
         pass
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
