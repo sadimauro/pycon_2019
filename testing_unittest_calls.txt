@@ -1,2 +1,0 @@
-./testing_unittest.py -v
-python3 -m unittest testing_unittest.py
