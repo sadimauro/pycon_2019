@@ -28,6 +28,16 @@ Mocking is a thing.  See example code.
 
 Floats act peculiarly, but their behavior mostly makes sense if you think about how they're stored internally.
 
+There are very many (too many?) ways to test.  See code for examples of unittest, unittest mocking, and pytest.  I've also used doctest.
+
+Linters and formatters make your code better:
+* linters: source code analysis.  They suggest changes by finding e.g. unused and undefined variables, variables with names not conforming to PEP 8, etc.  In Python, these include 
+** flake8 (8 for PEP8, the Python style guide)
+** pylint
+** mypy, which performs static type checking, which is most useful if you've included type annotations
+* (auto-)formatters: reformat code for readability.  In Python, black is one often mentioned; black does auto-formatting in a deterministic way, and without changing the code's AST representation.
+See examples of black (auto-formatter).
+
 
 Less Useful Tidbits
 ===================

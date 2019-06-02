@@ -1,0 +1,156 @@
+************* Module formatting_sample_original
+formatting_sample_original.py:4:4: C0326: No space allowed after bracket
+x = {  'a':37,'b':42,
+    ^ (bad-whitespace)
+formatting_sample_original.py:4:13: C0326: Exactly one space required after comma
+x = {  'a':37,'b':42,
+             ^ (bad-whitespace)
+formatting_sample_original.py:6:0: C0330: Wrong continued indentation (add 7 spaces).
+'c':927}
+^      | (bad-continuation)
+formatting_sample_original.py:13:0: W0311: Bad indentation. Found 1 spaces, expected 4 (bad-indentation)
+formatting_sample_original.py:15:0: W0311: Bad indentation. Found 1 spaces, expected 4 (bad-indentation)
+formatting_sample_original.py:16:0: W0311: Bad indentation. Found 1 spaces, expected 4 (bad-indentation)
+formatting_sample_original.py:17:0: W0311: Bad indentation. Found 1 spaces, expected 4 (bad-indentation)
+formatting_sample_original.py:19:0: C0330: Wrong continued indentation before block.
+and that): y = 'hello ''world'#FIXME: https://github.com/python/black/issues/26
+^   |   | (bad-continuation)
+formatting_sample_original.py:20:11: C0326: No space allowed around bracket
+class Foo  (     object  ):
+           ^ (bad-whitespace)
+formatting_sample_original.py:20:25: C0326: No space allowed before bracket
+class Foo  (     object  ):
+                         ^ (bad-whitespace)
+formatting_sample_original.py:21:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+formatting_sample_original.py:21:11: C0326: No space allowed before bracket
+  def f    (self   ):
+           ^ (bad-whitespace)
+formatting_sample_original.py:21:19: C0326: No space allowed before bracket
+  def f    (self   ):
+                   ^ (bad-whitespace)
+formatting_sample_original.py:22:0: W0311: Bad indentation. Found 4 spaces, expected 8 (bad-indentation)
+formatting_sample_original.py:23:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+formatting_sample_original.py:23:15: C0326: Exactly one space required after comma
+  def g(self, x,y=42):
+               ^ (bad-whitespace)
+formatting_sample_original.py:24:0: W0311: Bad indentation. Found 6 spaces, expected 8 (bad-indentation)
+formatting_sample_original.py:25:7: C0326: No space allowed around bracket
+def f  (   a: List[ int ]) :
+       ^ (bad-whitespace)
+formatting_sample_original.py:25:18: C0326: No space allowed after bracket
+def f  (   a: List[ int ]) :
+                  ^ (bad-whitespace)
+formatting_sample_original.py:25:24: C0326: No space allowed before bracket
+def f  (   a: List[ int ]) :
+                        ^ (bad-whitespace)
+formatting_sample_original.py:25:27: C0326: No space allowed before :
+def f  (   a: List[ int ]) :
+                           ^ (bad-whitespace)
+formatting_sample_original.py:26:0: W0311: Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
+formatting_sample_original.py:27:41: C0326: Exactly one space required after comma
+def very_important_function(template: str,*variables,file: os.PathLike,debug:bool=False,):
+                                         ^ (bad-whitespace)
+formatting_sample_original.py:27:52: C0326: Exactly one space required after comma
+def very_important_function(template: str,*variables,file: os.PathLike,debug:bool=False,):
+                                                    ^ (bad-whitespace)
+formatting_sample_original.py:27:70: C0326: Exactly one space required after comma
+def very_important_function(template: str,*variables,file: os.PathLike,debug:bool=False,):
+                                                                      ^ (bad-whitespace)
+formatting_sample_original.py:27:76: C0326: Exactly one space required after :
+def very_important_function(template: str,*variables,file: os.PathLike,debug:bool=False,):
+                                                                            ^ (bad-whitespace)
+formatting_sample_original.py:27:81: C0326: Exactly one space required around keyword argument assignment
+def very_important_function(template: str,*variables,file: os.PathLike,debug:bool=False,):
+                                                                                 ^ (bad-whitespace)
+formatting_sample_original.py:30:0: W0311: Bad indentation. Found 5 spaces, expected 8 (bad-indentation)
+formatting_sample_original.py:33:5: C0326: Exactly one space required after comma
+    0,  1,  2,
+     ^ (bad-whitespace)
+formatting_sample_original.py:33:9: C0326: Exactly one space required after comma
+    0,  1,  2,
+         ^ (bad-whitespace)
+formatting_sample_original.py:34:5: C0326: Exactly one space required after comma
+    3,  4,  5,
+     ^ (bad-whitespace)
+formatting_sample_original.py:34:9: C0326: Exactly one space required after comma
+    3,  4,  5,
+         ^ (bad-whitespace)
+formatting_sample_original.py:35:5: C0326: Exactly one space required after comma
+    6,  7,  8,
+     ^ (bad-whitespace)
+formatting_sample_original.py:35:9: C0326: Exactly one space required after comma
+    6,  7,  8,
+         ^ (bad-whitespace)
+formatting_sample_original.py:39:5: C0326: Exactly one space required after comma
+    0,  1,  2,
+     ^ (bad-whitespace)
+formatting_sample_original.py:39:9: C0326: Exactly one space required after comma
+    0,  1,  2,
+         ^ (bad-whitespace)
+formatting_sample_original.py:40:5: C0326: Exactly one space required after comma
+    3,  4,  5,
+     ^ (bad-whitespace)
+formatting_sample_original.py:40:9: C0326: Exactly one space required after comma
+    3,  4,  5,
+         ^ (bad-whitespace)
+formatting_sample_original.py:41:5: C0326: Exactly one space required after comma
+    6,  7,  8,
+     ^ (bad-whitespace)
+formatting_sample_original.py:41:9: C0326: Exactly one space required after comma
+    6,  7,  8,
+         ^ (bad-whitespace)
+formatting_sample_original.py:19:1: W0511: FIXME: https://github.com/python/black/issues/26 (fixme)
+formatting_sample_original.py:1:0: C0111: Missing module docstring (missing-docstring)
+formatting_sample_original.py:3:0: E0401: Unable to import 'seven_dwwarfs' (import-error)
+formatting_sample_original.py:4:0: C0103: Constant name "x" doesn't conform to UPPER_CASE naming style (invalid-name)
+formatting_sample_original.py:8:0: C0103: Constant name "x" doesn't conform to UPPER_CASE naming style (invalid-name)
+formatting_sample_original.py:10:3: E0602: Undefined variable 'very_long_variable_name' (undefined-variable)
+formatting_sample_original.py:11:1: E0602: Undefined variable 'very_long_variable_name' (undefined-variable)
+formatting_sample_original.py:12:1: E0602: Undefined variable 'very_long_variable_name' (undefined-variable)
+formatting_sample_original.py:13:1: C0103: Constant name "z" doesn't conform to UPPER_CASE naming style (invalid-name)
+formatting_sample_original.py:15:1: C0103: Constant name "world" doesn't conform to UPPER_CASE naming style (invalid-name)
+formatting_sample_original.py:16:1: C0103: Constant name "a" doesn't conform to UPPER_CASE naming style (invalid-name)
+formatting_sample_original.py:17:1: C0103: Constant name "f" doesn't conform to UPPER_CASE naming style (invalid-name)
+formatting_sample_original.py:18:4: E0602: Undefined variable 'this' (undefined-variable)
+formatting_sample_original.py:19:4: E0602: Undefined variable 'that' (undefined-variable)
+formatting_sample_original.py:19:11: C0103: Constant name "y" doesn't conform to UPPER_CASE naming style (invalid-name)
+formatting_sample_original.py:20:0: C0111: Missing class docstring (missing-docstring)
+formatting_sample_original.py:20:0: R0205: Class 'Foo' inherits from object, can be safely removed from bases in python3 (useless-object-inheritance)
+formatting_sample_original.py:21:2: C0103: Method name "f" doesn't conform to snake_case naming style (invalid-name)
+formatting_sample_original.py:21:2: C0111: Missing method docstring (missing-docstring)
+formatting_sample_original.py:21:2: R0201: Method could be a function (no-self-use)
+formatting_sample_original.py:23:14: W0621: Redefining name 'x' from outer scope (line 4) (redefined-outer-name)
+formatting_sample_original.py:23:16: W0621: Redefining name 'y' from outer scope (line 19) (redefined-outer-name)
+formatting_sample_original.py:23:2: C0103: Method name "g" doesn't conform to snake_case naming style (invalid-name)
+formatting_sample_original.py:23:2: C0103: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
+formatting_sample_original.py:23:2: C0103: Argument name "y" doesn't conform to snake_case naming style (invalid-name)
+formatting_sample_original.py:23:2: C0111: Missing method docstring (missing-docstring)
+formatting_sample_original.py:23:14: W0613: Unused argument 'x' (unused-argument)
+formatting_sample_original.py:23:2: R0201: Method could be a function (no-self-use)
+formatting_sample_original.py:25:11: W0621: Redefining name 'a' from outer scope (line 16) (redefined-outer-name)
+formatting_sample_original.py:25:0: E0102: function already defined line 17 (function-redefined)
+formatting_sample_original.py:25:0: C0103: Function name "f" doesn't conform to snake_case naming style (invalid-name)
+formatting_sample_original.py:25:0: C0103: Argument name "a" doesn't conform to snake_case naming style (invalid-name)
+formatting_sample_original.py:25:0: C0111: Missing function docstring (missing-docstring)
+formatting_sample_original.py:25:14: E0602: Undefined variable 'List' (undefined-variable)
+formatting_sample_original.py:26:22: E0602: Undefined variable 'u' (undefined-variable)
+formatting_sample_original.py:29:28: W0621: Redefining name 'f' from outer scope (line 17) (redefined-outer-name)
+formatting_sample_original.py:27:59: E0602: Undefined variable 'os' (undefined-variable)
+formatting_sample_original.py:29:28: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+formatting_sample_original.py:27:28: W0613: Unused argument 'template' (unused-argument)
+formatting_sample_original.py:27:71: W0613: Unused argument 'debug' (unused-argument)
+formatting_sample_original.py:27:0: W0613: Unused argument 'variables' (unused-argument)
+formatting_sample_original.py:29:28: W0612: Unused variable 'f' (unused-variable)
+formatting_sample_original.py:32:0: C0103: Constant name "custom_formatting" doesn't conform to UPPER_CASE naming style (invalid-name)
+formatting_sample_original.py:38:0: C0103: Constant name "regular_formatting" doesn't conform to UPPER_CASE naming style (invalid-name)
+formatting_sample_original.py:3:0: W0611: Unused Grumpy imported from seven_dwwarfs (unused-import)
+formatting_sample_original.py:3:0: W0611: Unused Happy imported from seven_dwwarfs (unused-import)
+formatting_sample_original.py:3:0: W0611: Unused Sleepy imported from seven_dwwarfs (unused-import)
+formatting_sample_original.py:3:0: W0611: Unused Bashful imported from seven_dwwarfs (unused-import)
+formatting_sample_original.py:3:0: W0611: Unused Sneezy imported from seven_dwwarfs (unused-import)
+formatting_sample_original.py:3:0: W0611: Unused Dopey imported from seven_dwwarfs (unused-import)
+formatting_sample_original.py:3:0: W0611: Unused Doc imported from seven_dwwarfs (unused-import)
+
+----------------------------------------------------------------------
+Your code has been rated at -49.55/10 (previous run: -49.55/10, +0.00)
+

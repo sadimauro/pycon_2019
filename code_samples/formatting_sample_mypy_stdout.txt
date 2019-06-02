@@ -1,0 +1,15 @@
+formatting_sample_original.py:3: error: Cannot find module named 'seven_dwwarfs'
+formatting_sample_original.py:3: note: See https://mypy.readthedocs.io/en/latest/running_mypy.html#missing-imports
+formatting_sample_original.py:8: error: Incompatible types in assignment (expression has type "float", variable has type "Dict[str, int]")
+formatting_sample_original.py:10: error: Name 'very_long_variable_name' is not defined
+formatting_sample_original.py:11: error: Name 'very_long_variable_name' is not defined
+formatting_sample_original.py:12: error: Name 'very_long_variable_name' is not defined
+formatting_sample_original.py:18: error: Name 'this' is not defined
+formatting_sample_original.py:19: error: Name 'that' is not defined
+formatting_sample_original.py:25: error: Name 'List' is not defined
+formatting_sample_original.py:25: error: Name 'f' already defined on line 17
+formatting_sample_original.py:26: error: Name 'u' is not defined
+formatting_sample_original.py:26: error: Unsupported operand types for ** ("str" and "int")
+formatting_sample_original.py:27: error: Name 'os' is not defined
+formatting_sample_original.py:46: error: Unsupported operand types for + ("int" and "str")
+formatting_sample_original.py:47: error: Incompatible return value type (got "float", expected "bool")

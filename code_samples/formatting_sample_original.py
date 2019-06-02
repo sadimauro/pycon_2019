@@ -40,3 +40,8 @@ regular_formatting = [
     3,  4,  5,
     6,  7,  8,
 ]
+
+def function_with_bad_typing(int_arg: int, str_arg: str) -> bool:
+    local_var = int_arg
+    int_arg = int_arg + "steve"
+    return 1.23
