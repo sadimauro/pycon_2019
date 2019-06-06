@@ -1,0 +1,46 @@
+linting_formatting_example_original.py:4:6: E201 whitespace after '{'
+linting_formatting_example_original.py:4:11: E231 missing whitespace after ':'
+linting_formatting_example_original.py:4:14: E231 missing whitespace after ','
+linting_formatting_example_original.py:4:18: E231 missing whitespace after ':'
+linting_formatting_example_original.py:6:1: E128 continuation line under-indented for visual indent
+linting_formatting_example_original.py:6:4: E231 missing whitespace after ':'
+linting_formatting_example_original.py:13:2: E111 indentation is not a multiple of four
+linting_formatting_example_original.py:15:2: E111 indentation is not a multiple of four
+linting_formatting_example_original.py:16:2: E111 indentation is not a multiple of four
+linting_formatting_example_original.py:17:2: E111 indentation is not a multiple of four
+linting_formatting_example_original.py:17:22: E999 SyntaxError: invalid syntax
+linting_formatting_example_original.py:19:1: E128 continuation line under-indented for visual indent
+linting_formatting_example_original.py:19:10: E701 multiple statements on one line (colon)
+linting_formatting_example_original.py:19:31: E261 at least two spaces before inline comment
+linting_formatting_example_original.py:19:31: E262 inline comment should start with '# '
+linting_formatting_example_original.py:20:1: E302 expected 2 blank lines, found 0
+linting_formatting_example_original.py:20:13: E201 whitespace after '('
+linting_formatting_example_original.py:20:25: E202 whitespace before ')'
+linting_formatting_example_original.py:21:3: E111 indentation is not a multiple of four
+linting_formatting_example_original.py:21:8: E211 whitespace before '('
+linting_formatting_example_original.py:21:19: E202 whitespace before ')'
+linting_formatting_example_original.py:22:11: E271 multiple spaces after keyword
+linting_formatting_example_original.py:23:3: E301 expected 1 blank line, found 0
+linting_formatting_example_original.py:23:3: E111 indentation is not a multiple of four
+linting_formatting_example_original.py:23:16: E231 missing whitespace after ','
+linting_formatting_example_original.py:24:7: E111 indentation is not a multiple of four
+linting_formatting_example_original.py:25:1: E302 expected 2 blank lines, found 0
+linting_formatting_example_original.py:25:6: E211 whitespace before '('
+linting_formatting_example_original.py:25:9: E201 whitespace after '('
+linting_formatting_example_original.py:25:20: E201 whitespace after '['
+linting_formatting_example_original.py:25:24: E202 whitespace before ']'
+linting_formatting_example_original.py:25:27: E203 whitespace before ':'
+linting_formatting_example_original.py:26:3: E111 indentation is not a multiple of four
+linting_formatting_example_original.py:26:9: E271 multiple spaces after keyword
+linting_formatting_example_original.py:26:24: E203 whitespace before ':'
+linting_formatting_example_original.py:27:1: E302 expected 2 blank lines, found 0
+linting_formatting_example_original.py:27:42: E231 missing whitespace after ','
+linting_formatting_example_original.py:27:53: E231 missing whitespace after ','
+linting_formatting_example_original.py:27:71: E231 missing whitespace after ','
+linting_formatting_example_original.py:27:77: E231 missing whitespace after ':'
+linting_formatting_example_original.py:27:80: E501 line too long (90 > 79 characters)
+linting_formatting_example_original.py:27:82: E252 missing whitespace around parameter equals
+linting_formatting_example_original.py:27:83: E252 missing whitespace around parameter equals
+linting_formatting_example_original.py:30:6: E111 indentation is not a multiple of four
+linting_formatting_example_original.py:32:1: E305 expected 2 blank lines after class or function definition, found 0
+linting_formatting_example_original.py:43:1: W391 blank line at end of file

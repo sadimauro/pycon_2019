@@ -1,0 +1,4 @@
+typing_example.py:9: error: Argument 1 to "foo_dynamic" has incompatible type "str"; expected "int"
+typing_example.py:10: error: Unsupported operand types for + ("str" and "int")
+typing_example.py:15: error: Incompatible types in assignment (expression has type "str", variable has type "int")
+typing_example.py:20: error: List item 1 has incompatible type "str"; expected "bool"
