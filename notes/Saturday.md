@@ -19,7 +19,7 @@ The criminal justice is horrible, hella racist, wildly ineffective.  What can we
 
 Opportunities:
 * as individuals:
-** give people money and equipmne tthat can help them get a job.
+** give people money and equipment that can help them get a job.
 ** establish and support programs at prisons to help people better themselves, e.g. to build a career.
 ** get political about prisons.  [Know your DA](meetyourda.org).
 * as technologists:
